@@ -218,7 +218,9 @@ body {
 }
 .s-main__img {
   display: block;
-  margin: 0 auto
+  margin: 0 auto;
+  max-width: 100%;
+  width: 450px
 }
 .s-main__bar {
   position: fixed;
