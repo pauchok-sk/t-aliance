@@ -1,0 +1,104 @@
+.s-main {
+  padding: 50px 0px;
+  &__logo {
+    display: block;
+    width: 210px;
+    margin: 0 auto;
+  }
+  &__content {
+    margin: 40px auto;
+    max-width: 385px;
+
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (max-width: 419px) {
+      font-size: 28px;
+      max-width: 345px;
+    }
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+  &__bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 45px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 100;
+  }
+  &__bar-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 40px;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  &__bar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 80px;
+
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    color: #52565f;
+
+    @include hover {
+      .rect {
+        transform: scale(1.08);
+      }
+    }
+
+    .rect {
+      @include flex-center;
+      border-radius: 15px;
+      width: 70px;
+      aspect-ratio: 1/1;
+      background: #52565f;
+
+      transition: transform 0.3s ease;
+    }
+  }
+  &__bar-btn {
+    @include flex-center;
+    padding: 22px;
+    gap: 15px;
+    border-radius: 15px;
+    background-color: #37bd4b;
+    width: 100%;
+    margin-top: 40px;
+
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    transition: background-color 0.3s ease;
+
+    @include hover {
+      background-color: #33ad45;
+    }
+
+    svg {
+      width: 21px;
+      height: 21px;
+    }
+  }
+}
