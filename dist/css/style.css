@@ -295,7 +295,8 @@ body {
 }
 @media (max-width:419px) {
   .s-main__content {
-    font-size: 26px
+    font-size: 26px;
+    max-width: 330px
   }
 }
 @media (any-hover:hover) {
